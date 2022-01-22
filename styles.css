@@ -1,0 +1,118 @@
+/*Master Styles*/
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0px;
+}
+.Container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/*Navigation Bar Styles*/
+.NavbarDiv {
+  display: flex; /* this puts the childrens of NavDiv beside side by side */
+  justify-content: space-between;
+  /*padding: 38px;*/
+}
+.LeftSideDiv {
+  display: flex;
+}
+.NavbarDiv > .LeftSideDiv > div {
+  margin-right: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.LinkDiv {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.LinkDiv a {
+  color: #8a8a8a;
+  text-decoration: none; /*to remove the original underline.*/
+  transition: color 0.5s;
+}
+.LinkDiv:hover {
+  border-bottom: 1px solid black;
+}
+.LinkDiv a:hover {
+  color: black;
+}
+.ActiveLinkDiv {
+  border-bottom: 1px solid black;
+}
+.ActiveLinkDiv a {
+  color: black !important;
+}
+/**/
+
+/**/
+/*Portifolio Styles*/
+.AllContentsDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.IndividualContentDiv {
+  position: relative;
+}
+
+.images {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+}
+/*.ImageTextDiv{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background: red;
+}*/
+.ImageTextDiv {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.LogoDiv img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.ImageTextDiv .SubtitleDiv {
+  /*the space before .SubtitleDiv matters*/
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+.ImageTextDiv:hover .SubtitleDiv {
+  font-weight: 600;
+  color: lightseagreen;
+}
+.imgDarken {
+  transition: 1s;
+  filter: brightness(10%);
+}
+/*About page styles*/
+
+.TwoColumnDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.ProfileImageDiv img {
+  width: 100%;
+}
+.ProfileContentDiv {
+  padding: 30px;
+}
+.ProfileContentDiv h1 {
+  color: lightseagreen;
+}
